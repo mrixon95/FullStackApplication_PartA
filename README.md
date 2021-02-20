@@ -62,7 +62,7 @@ Additionally an Elastic Load Balancer will be used to direct user traffic to a p
 
 
 
-![application_architecture_design](./docs/App_diagram.png)
+![application_architecture_design](./docs/App_Diagram.png)
 
 ### User stories:
 
