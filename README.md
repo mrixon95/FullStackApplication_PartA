@@ -2,6 +2,8 @@
 
 
 
+### Website Description
+
 ### Purpose:
 
 This project is designed to track the physical, mental and financial health of an individual. The analytics relating to the user's physical, mental and financial health should all be tracked and this information is to be displayed back to the user in an understandable way. Therefore, the purpose of YourHealth, is to assist the user in monitoring their overall health conditions and get a complete picture of all the significant factors that affect their health and wellbeing. Amongst other health and wellbeing metrics, it will be able to track the user's weight, diet, exercise routine, blood pressure, financial security and mental wellbeing. The intent of building YourHealth is to give the user a very clear picture of every factor that influences their health and wellbeing. Additionally, the app should clearly display how each factor has changed overtime so that user's can see which aspects of their health and wellbeing have been improving and deteriorating. 
@@ -44,9 +46,28 @@ Finally, a **docker image and container** will be used to store all the instruct
 
 ### Data Flow Diagram:
 
+Ovals represent processes, squares represent user entities and the parallel horizontal lines represent a database table. 
+
 ![DFD](./docs/DFD.png)
 
 
 
+### Application Architecture Diagram:
+
+In my application, there will be at least EC2 instance for the Python Flask Application and exactly  one EC2 instance for hosting the PostgreSQL database. The inbound roles of the Database EC2 instance will be set so that only traffic from the application EC2 instance will be accepted. All other traffic that is not from the EC2 instance of the Flask App, will be rejected. This means that the database itself will only be accessible by the EC2 instance of the Flask Application. 
+
+The Database EC2 instance will host a PostgreSQL. Therefore, the database EC2 instance must be able to send requests to the internet so that the PostgreSQL database itself is able to update itself by accessing new packages on the internet. It will be able to do this through a NAT gateway.
+
+Additionally an Elastic Load Balancer will be used to direct user traffic to a particular Application EC2 instance. Incase there is a spike in traffic, auto scaling rules will be set so that new EC2 instances are spun up to host the Flask Application. The ELB ensure that workload is spread out across the application EC2 instances and that no single application EC2 is overwhelmed with traffic. Once the workload decreases again, the unnecessary EC2 instances can be terminated so that resources are not being wasted.
 
 
+
+![application_architecture_design](./docs/App_diagram.png)
+
+### User stories:
+
+1. As someone who wants to loose weight and eat healthier food, I want to find an exercise routine and meal plan, and track my progress, so that I remain committed to my goal weight and see how I progress after each week.
+2. As a personal trainer, I want to advertise myself to people looking to lose weight, so that I can gain customers and make more business.
+3. As a dietician, I want to help people with allergies to still eat healthy, tasty food. This way, I will gain more clients and help grow my brand.
+4. As a poor university student, I am frequently running out of money. I want to be able to budget for all my expenses so that I don't need to borrow money from friends in order to pay my rent. 
+5. As someone with mental health problems, I find myself unsure what parts of my life are causing me to feel down and depressed. I want to be able to track my level of wellbeing against my eating habits, exercise level and finances so that I can identify what leads me to feel depressed.
