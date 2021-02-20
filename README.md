@@ -71,3 +71,35 @@ Additionally an Elastic Load Balancer will be used to direct user traffic to a p
 3. As a dietician, I want to help people with allergies to still eat healthy, tasty food. This way, I will gain more clients and help grow my brand.
 4. As a poor university student, I am frequently running out of money. I want to be able to budget for all my expenses so that I don't need to borrow money from friends in order to pay my rent. 
 5. As someone with mental health problems, I find myself unsure what parts of my life are causing me to feel down and depressed. I want to be able to track my level of wellbeing against my eating habits, exercise level and finances so that I can identify what leads me to feel depressed.
+
+
+
+### Planning methodology using Trello board and Gantt chart:
+
+In order to plan out the tasks to complete for my Python Flask App, I will be using a Trello board. 
+
+Normally, in a real company scenario, there would be things to do before planning out a project. The project manager in the team would need to **talk to all stakeholders** and understand the **objectives** of the client. Also there would be **budgetary constraints** and a quite limited time frame to work within. There would be a team of developers that must effectively work together to ensure that tasks are not duplicated and that their are no significant roadblocks towards completing a feature. Also there are **risks to prepare for** such as clients changing their requirements half-way through the project or a developer leaving before the project is finished.
+
+Fortunately, this scenario just involves myself, the time constraint is not too strict (3 weeks is enough time to do a Flask app) and there are no important budget constraints to consider.
+
+I will be using a **Trello board**. 
+
+The lists in the trello board are as follows: To do list, Work in Progress, Completed Tasks, Questions to ask CCC instructors and Answered questions from CCC instructors
+
+I believe that to effectively manage a project, I must track the completion of each task from beginning to end. This way, I don't need to rely on memory in order to remember where I am up to in the project. Specifically, it is important to track the tasks that I have not yet started, the tasks in progress and finally the tasks that have indeed been completed. Also, I expect that I will have questions to ask the CCC instructors in regards to my Flask app. Therefore I have a list for that along with the questions that have already received answers.
+
+
+
+![trello_board](./docs/trello_board.PNG)
+
+
+
+
+
+The trello board above tells me all the tasks that are to be completed in the project and their status. However, it doesn't say anything about how long each task should take and the level of difficulty in completing them. The trello board does not tell me how well I am tracking to my expected time frame. Therefore, I have decided to also use a Gantt chart.
+
+
+
+![Gantt chart](./docs/Gantt_Chart.png)
+
+Clearly, the tasks of writing endpoints and completing the front-end are the two major tasks that will take up the most time. Also, I have limited front-end knowledge so I have indicated that the front-end will be difficult. The Gantt chart allows me to plan out more time for the endpoints and front-end since they are quite labor-intensive. It is important to have this time dedicated to those two tasks since I know that they can take a long time. On the other hand, conforming code to PEP8 standards just involves running Flake8 in each file and renaming variables to be more informative. Therefore, I only need to dedicate a few days to it at most.
