@@ -2,7 +2,9 @@
 
 
 
-### Website Description
+## Website Description
+
+
 
 ### Purpose:
 
@@ -44,7 +46,11 @@ Finally, a **docker image and container** will be used to store all the instruct
 
 
 
-### Data Flow Diagram:
+
+
+## Data Flow Diagram
+
+
 
 Ovals represent processes, squares represent user entities and the parallel horizontal lines represent a database table. 
 
@@ -52,7 +58,7 @@ Ovals represent processes, squares represent user entities and the parallel hori
 
 
 
-### Application Architecture Diagram:
+## Application Architecture Diagram
 
 In my application, there will be at least EC2 instance for the Python Flask Application and exactly  one EC2 instance for hosting the PostgreSQL database. The inbound roles of the Database EC2 instance will be set so that only traffic from the application EC2 instance will be accepted. All other traffic that is not from the EC2 instance of the Flask App, will be rejected. This means that the database itself will only be accessible by the EC2 instance of the Flask Application. 
 
@@ -64,7 +70,13 @@ Additionally an Elastic Load Balancer will be used to direct user traffic to a p
 
 ![application_architecture_design](./docs/App_Diagram.png)
 
-### User stories:
+
+
+
+
+## User stories
+
+
 
 1. As someone who wants to loose weight and eat healthier food, I want to find an exercise routine and meal plan, and track my progress, so that I remain committed to my goal weight and see how I progress after each week.
 2. As a personal trainer, I want to advertise myself to people looking to lose weight, so that I can gain customers and make more business.
@@ -74,7 +86,11 @@ Additionally an Elastic Load Balancer will be used to direct user traffic to a p
 
 
 
-### Planning methodology using Trello board and Gantt chart:
+
+
+## Planning methodology using Trello board and Gantt chart
+
+
 
 In order to plan out the tasks to complete for my Python Flask App, I will be using a Trello board. 
 
