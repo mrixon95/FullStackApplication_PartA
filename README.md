@@ -103,3 +103,25 @@ The trello board above tells me all the tasks that are to be completed in the pr
 ![Gantt chart](./docs/Gantt_Chart.png)
 
 Clearly, the tasks of writing endpoints and completing the front-end are the two major tasks that will take up the most time. Also, I have limited front-end knowledge so I have indicated that the front-end will be difficult. The Gantt chart allows me to plan out more time for the endpoints and front-end since they are quite labor-intensive. It is important to have this time dedicated to those two tasks since I know that they can take a long time. On the other hand, conforming code to PEP8 standards just involves running Flake8 in each file and renaming variables to be more informative. Therefore, I only need to dedicate a few days to it at most.
+
+
+
+## Wireframes
+
+
+
+### Login Page
+
+![Login_Page](./docs/Login_Page.png)
+
+
+
+
+
+
+
+### Insights Page
+
+
+
+### ![Insights_Page](./docs/Insights_Page.png)
