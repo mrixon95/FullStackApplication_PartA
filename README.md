@@ -136,8 +136,46 @@ Clearly, the tasks of writing endpoints and completing the front-end are the two
 
 
 
+### Profile Page
+
+
+
+![ ](./docs/Profile_Page.png)
+
+
+
+
+
+
+
 ### Insights Page
 
-
-
 ### ![Insights_Page](./docs/Insights_Page.png)
+
+
+
+
+
+
+
+
+
+### Activity Page
+
+![Activity_Log_Page](./docs/Activity_Log_Page.png)
+
+
+
+
+
+
+
+
+
+### Contact Specialists Page
+
+![Contacts_Page](./docs/Contacts_Page.png)
+
+
+
+### 
